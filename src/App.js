@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import Service from "./components/Service";
+import Priority from "./components/Priority";
 
 class App extends Component {
     render() {
@@ -12,6 +13,7 @@ class App extends Component {
                 <Header/>
                 <Portfolio/>
                 <Service/>
+                <Priority/>
             </>
         );
     }
