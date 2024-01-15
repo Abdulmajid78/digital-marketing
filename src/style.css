@@ -1,5 +1,5 @@
 :root {
-    --main-color: #E43767;
+    --main-color: 228, 55, 103;
     --main-color-dark: #1E1E1E;
 }
 
@@ -16,6 +16,8 @@
 .navbar-section-cust {
     border-bottom: 1px solid white;
     background-color: var(--main-color-dark);
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-section-cust .container .content {
@@ -36,7 +38,7 @@
 }
 
 .navbar-section-cust .container .content .logo svg {
-    fill: var(--main-color);
+    fill: rgb(var(--main-color));
     height: 47px;
 }
 
@@ -75,7 +77,8 @@
 
 .navbar-section-cust .container .content .nav_button button {
     padding: 12px 16px;
-    background-color: var(--main-color);
+    background-color: rgb(var(--main-color));
+    font-weight: 600;
     color: white;
     outline: none;
     border: none;
@@ -85,27 +88,16 @@
 
 .navbar-section-cust .container .content .nav_button button:hover {
     background-color: white;
-    color: var(--main-color);
+    color: rgb(var(--main-color));
 }
 
 /*end navbar section*/
 
 /*header section start*/
 .header-section-cust {
-    padding-top: 190px;
-    padding-bottom: 188px;
+    padding-top: 200px;
+    padding-bottom: 182px;
     background-color: var(--main-color-dark);
-}
-
-.header-section-cust .container .row .text-back {
-    color: var(--main-color);
-    display: inline-flex;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 8px;
-    background: rgba(228, 55, 103, 0.20);
 }
 
 .header-section-cust .container .row div h1 {
@@ -119,6 +111,17 @@
     margin: 16px 0;
 }
 
+.header-section-cust .container .row .text-back {
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 8px;
+    background: rgba(var(--main-color), 0.5);
+}
+
 .header-section-cust .container .row div p {
     color: rgba(255, 255, 255, 0.80);
     font-feature-settings: 'liga' off;
@@ -130,26 +133,95 @@
 
 .header-section-cust .container .row div button {
     margin-top: 25px;
-
     padding: 16px;
     gap: 10px;
     border-radius: 8px;
     color: white;
-    background: #E43767;
+    background: rgb(var(--main-color));
+    font-weight: 600;
     outline: none;
     border: none;
 }
 
-.main-image {
+.header-section-cust .container .row div .main-image {
     width: 387px;
     height: 432px;
     flex-shrink: 0;
-    border: 3px solid var(--main-color);
+    border: 3px solid rgb(var(--main-color));
     border-radius: 16px;
 }
 
-.main-image img {
+.header-section-cust .container .row div .main-image img {
     width: 100%;
 }
 
 /*end header section*/
+
+/* start portfolio section*/
+.portfolio-section-cust {
+    background-color: rgb(var(--main-color));
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.portfolio-section-cust .container .title .title h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    margin-bottom: 10px;
+}
+
+.portfolio-section-cust .container .title .title p {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.portfolio-section-cust .container .icons {
+    margin: 65px 0;
+}
+
+
+.portfolio-section-cust .container .icons span {
+    color: #FFF;
+    text-align: right;
+    font-size: 36.641px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.portfolio-section-cust .container .icons p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.portfolio-section-cust .container .cards .card-body span {
+    color: rgb(var(--main-color));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; /* 116.667% */
+}
+
+.portfolio-section-cust .container .cards .card-body p {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 112.5% */
+}
+/*end portfolio section*/
+
+/**/

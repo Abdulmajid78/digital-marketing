@@ -2,7 +2,24 @@ import React, {Component} from 'react';
 import ReactCountryFlag from "react-country-flag"
 
 class Navbar extends Component {
-    navbarArray = ["Portfolio", "Services and Tariffs", "About", "FAQ"]
+    navbarArray = [
+        {
+            name: "Portfolio",
+            url: '#portfolio'
+        },
+        {
+            name: "Services and Tariffs",
+            url: '#service'
+        },
+        {
+            name: "About",
+            url: '#about'
+        },
+        {
+            name: "FAQ",
+            url: '#faq'
+        }
+    ]
 
 
     render() {
@@ -72,7 +89,7 @@ c11 -7 12 -28 5 -105 -7 -90 -10 -99 -34 -113 -25 -15 -31 -14 -118 23 -124
                             <ul>
                                 {this.navbarArray.map((item, index) => (
                                     <li key={index} className="nav-item">
-                                        <a className="nav-link text-white" href="#">{item}</a>
+                                        <a className="nav-link text-white" href={item.url}>{item.name}</a>
                                     </li>
                                 ))}
                             </ul>
@@ -90,11 +107,23 @@ c11 -7 12 -28 5 -105 -7 -90 -10 -99 -34 -113 -25 -15 -31 -14 -118 23 -124
 
                                 <ul className="dropdown-menu">
                                     <li>
-                                        <a className="dropdown-item d-flex" href="#"><ReactCountryFlag countryCode="RU" svg title="RU"
-                                                          style={{width: '1.5em', height: '1.5em',marginRight:"5px"}}/>Russian</a></li>
+                                        <a className="dropdown-item d-flex" href="#"><ReactCountryFlag countryCode="RU"
+                                                                                                       svg title="RU"
+                                                                                                       style={{
+                                                                                                           width: '1.5em',
+                                                                                                           height: '1.5em',
+                                                                                                           marginRight: "5px"
+                                                                                                       }}/>Russian</a>
+                                    </li>
                                     <li>
-                                        <a className="dropdown-item d-flex" href="#"><ReactCountryFlag countryCode="UZ" svg title="UZ"
-                                                          style={{width: '1.5em', height: '1.5em',marginRight:"5px"}}/>Uzbek</a></li>
+                                        <a className="dropdown-item d-flex" href="#"><ReactCountryFlag countryCode="UZ"
+                                                                                                       svg title="UZ"
+                                                                                                       style={{
+                                                                                                           width: '1.5em',
+                                                                                                           height: '1.5em',
+                                                                                                           marginRight: "5px"
+                                                                                                       }}/>Uzbek</a>
+                                    </li>
                                 </ul>
                             </li>
                             <button className="">Оставить заявку</button>
