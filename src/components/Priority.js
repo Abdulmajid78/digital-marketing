@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Priority extends Component {
     render() {
         return (
-            <section className="priority-section-cust">
+            <section className="priority-section-cust" id="about">
                 <div className="container">
                     <div className="row">
                         <h1>Ваш проект всегда в приоритете?</h1>

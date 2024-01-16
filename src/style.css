@@ -142,6 +142,12 @@
     font-weight: 600;
     outline: none;
     border: none;
+    transition: all .3s linear;
+}
+
+.header-section-cust .container .row div button:hover {
+    color: rgb(var(--main-color));
+    background: white;
 }
 
 .header-section-cust .container .row div .main-image {
@@ -384,3 +390,63 @@
 }
 
 /*end priority section*/
+
+/*start bottom section*/
+
+.bottom-section-cust {
+    background-color: rgb(var(--main-color));
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.bottom-section-cust .container .row div h1 {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+}
+
+.bottom-section-cust .container .row div span {
+    background-color: white;
+    padding: 12px;
+    border-radius: 100%;
+}
+
+/*carouser sec*/
+
+.bottom-section-cust .container .row .card .card-body p {
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.125rem; /* 150% */
+}
+
+.bottom-section-cust .container .row .card .card-footer {
+    border: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section-cust .container .row .card .card-footer h6 {
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0.625rem; /* 100% */
+    padding: 0;
+}
+
+.bottom-section-cust .container .row .card .card-footer p {
+    color: #000;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.5rem; /* 100% */
+}
+
+/*end bottom section*/

@@ -50,13 +50,8 @@ class Service extends Component {
                             ))}
                         </div>
                     </div>
-
-                    <div className="container">
-                        <div className="row">
-
-                        </div>
-                    </div>
                 </section>
+
                 <section className="middle-section-cust">
                     <div className="container">
                         <div className="row">

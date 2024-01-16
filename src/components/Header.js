@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Header extends Component {
     render() {
         return (
-            <section className="header-section-cust">
+            <section className="header-section-cust" id="header">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-6 col-12 d-flex flex-column justify-content-center align-items-start">
