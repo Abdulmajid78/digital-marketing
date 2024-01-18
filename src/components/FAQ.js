@@ -17,7 +17,7 @@ class Faq extends Component {
 
                 </div>
                 <div className="container">
-                                <Accordion array={array}/>
+                    <Accordion array={array}/>
                 </div>
             </section>
         );

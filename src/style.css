@@ -12,6 +12,20 @@
     font-family: inter-regular, sans-serif;
 }
 
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--main-color)); /* Adjust the color of the scrollbar thumb */
+    border-radius: 4px; /* Adjust the border-radius of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2c2e2f; /* Adjust the color of the scrollbar track */
+}
+
 /*navbar section*/
 .navbar-section-cust {
     border-bottom: 1px solid white;
@@ -562,7 +576,6 @@
 }
 
 /*end FAQ section*/
-
 
 /*start footer section*/
 .footer-section-custom {

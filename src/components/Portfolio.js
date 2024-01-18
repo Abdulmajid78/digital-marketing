@@ -28,7 +28,13 @@ class Portfolio extends Component {
         return (
             <section className="portfolio-section-cust" id="portfolio">
                 <div className="container">
-                    <div className="title row">
+                    <div className="title row"
+                         data-aos="flip-up"
+                         data-aos-offset="50"
+                         data-aos-delay="200"
+                         data-aos-duration="1200"
+                         data-aos-easing="ease-in-out"
+                    >
                         <div className="title col-12 text-center">
                             <h1>Портфолио</h1>
                             <p>
@@ -39,7 +45,7 @@ class Portfolio extends Component {
                         </div>
                     </div>
                     <div className="icons row">
-                        <div className="col-6 col-xl-3">
+                        <div data-aos="zoom-in-right" data-aos-delay='200' data-aos-duration='1400' className="col-6 col-xl-3">
                             <div className="d-flex align-items-center justify-content-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="44" height="37" viewBox="0 0 44 37"
                                      fill="none">
@@ -51,7 +57,7 @@ class Portfolio extends Component {
                             </div>
                             <p>Лет опыта</p>
                         </div>
-                        <div className="col-6 col-xl-3">
+                        <div data-aos="zoom-in" data-aos-delay='400' data-aos-duration='1900' className="col-6 col-xl-3">
                             <div className="d-flex align-items-center justify-content-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="37" viewBox="0 0 28 37"
                                      fill="none">
@@ -63,7 +69,7 @@ class Portfolio extends Component {
                             </div>
                             <p>Проектов в СММ / мес</p>
                         </div>
-                        <div className="col-6 col-xl-3">
+                        <div data-aos="zoom-in" data-aos-delay='400' data-aos-duration='1900' className="col-6 col-xl-3">
                             <div className="d-flex align-items-center justify-content-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="38" viewBox="0 0 37 38"
                                      fill="none">
@@ -78,7 +84,7 @@ class Portfolio extends Component {
                             </div>
                             <p>Специалистов сферы</p>
                         </div>
-                        <div className="col-6 col-xl-3">
+                        <div data-aos="zoom-in-left" data-aos-delay='200' data-aos-duration='1400' className="col-6 col-xl-3">
                             <div className="d-flex align-items-center justify-content-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="38" viewBox="0 0 37 38"
                                      fill="none">
@@ -93,7 +99,7 @@ class Portfolio extends Component {
 
                     </div>
                     <div className="cards row">
-                        {this.cardsArray.map((item,index) => (
+                        {this.cardsArray.map((item, index) => (
                             <div key={index} className="col-xl-3 col-12 mb-2 h-100">
                                 <div className="card w-100">
                                     <img className="card-img-top" src={item.image} alt=""/>

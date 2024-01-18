@@ -27,8 +27,8 @@ class Service extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="title col-7 mx-auto">
-                                <h1>Услуги и Тарифы</h1>
-                                <p>
+                                <h1 data-aos="fade-right" data-aos-duration='1200'>Услуги и Тарифы</h1>
+                                <p data-aos='fade-left' data-aos-duration='1200'>
                                     Наши услуги нацелены на максимальное удовлетворение потребностей клиентов. От
                                     разработки
                                     креативных концепций до стратегического маркетинга — выбирайте из наших тарифов и
@@ -38,7 +38,8 @@ class Service extends Component {
                         </div>
                         <div className="cards row">
                             {this.serviceArray.map((item, index) => (
-                                <div key={index} className="col-xl-3 col-12">
+                                <div key={index} data-aos="flip-left" data-aos-duration="900"
+                                     className="col-xl-3 col-12">
                                     <div className="card h-100">
                                         <div className="card-body">
                                             <img src="/assets/images/service.png" alt=""/>
@@ -55,11 +56,17 @@ class Service extends Component {
                 <section className="middle-section-cust">
                     <div className="container">
                         <div className="row">
-                            <div className="col-xl-6">
+                            <div className="col-xl-6"
+                                 data-aos="zoom-in-left" data-aos-duration="1200"
+                                 data-aos-offset="10" data-aos-delay="200"
+                                 data-aos-easing="ease-in-out">
                                 <img src="/assets/images/phone1.png" alt=""/>
                             </div>
 
-                            <div className="col-xl-6">
+                            <div className="col-xl-6"
+                                 data-aos="zoom-in-right" data-aos-duration="1200"
+                                 data-aos-offset="10" data-aos-delay="200"
+                                 data-aos-easing="ease-in-out">
                                 <h2>3 преимущество <br/> работы с нами</h2>
 
                                 <div className="background gap-3 mb-3">

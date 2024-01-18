@@ -4,11 +4,12 @@ import Header from "./components/Header";
 import Portfolio from "./components/Portfolio";
 import Service from "./components/Service";
 import Priority from "./components/Priority";
-import Backdrop from "bootstrap/js/src/util/backdrop";
 import Bottom from "./components/Bottom";
 import Form from "./components/Form";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class App extends Component {
     accordionArray = [
@@ -35,6 +36,7 @@ class App extends Component {
     ]
 
     render() {
+        AOS.init();
         return (
             <>
                 <Navbar/>
