@@ -270,7 +270,7 @@
 }
 
 .service-section-cust .container .cards .card-body h5 {
-    color: #E43767;
+    color: rgb(var(--main-color));
     font-size: 1.155rem;
     font-style: normal;
     font-weight: 700;
@@ -454,7 +454,7 @@
 
 /* start form section*/
 .form-section-cust {
-    background: linear-gradient(180deg, #e43767 50%, #1e1e1e 0);
+    background: linear-gradient(180deg, rgb(var(--main-color)) 50%, #1e1e1e 0);
 }
 
 
@@ -508,4 +508,55 @@
 
 /*start FAQ section*/
 
+.faq-section-cust {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background: var(--main-color-dark);
+}
+
+.faq-section-cust .container .row h1 {
+    color: rgb(var(--main-color));
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+}
+
+.faq-section-cust .container .row .accordion {
+    border-radius: 16px;
+}
+
+.faq-section-cust .container .row .accordion .accordion-item .accordion-header button {
+    color: rgb(var(--main-color));
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.faq-section-cust .container .row .accordion .accordion-item .accordion-body {
+    color: #1E1E1E;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+}
+
 /*end FAQ section*/
+
+
+/*start footer section*/
+.footer-section-custom {
+    padding-top: 90px;
+    background-color: rgb(var(--main-color));
+}
+
+.footer-section-custom ul li a {
+    color: white;
+}
+
+/*end footer section*/
