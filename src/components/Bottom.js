@@ -1,7 +1,74 @@
 import React, {Component} from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class Bottom extends Component {
     render() {
+
+        function SampleNextArrow(props) {
+            const {className, style, onClick} = props;
+            return (
+                <div
+                    className={className}
+                    style={{...style, background: "transparent", top: '-92px', right: '12px',padding: '24px',color: '#E43767', borderRadius: '100%'}}
+                    onClick={onClick}
+                />
+            );
+        }
+
+        function SamplePrevArrow(props) {
+            const {className, style, onClick} = props;
+            return (
+                <div
+                    className={className}
+                    style={{...style, background: "transparent",position: 'absolute', top: "-92px", left
+                            : '1196px', padding: '24px',color: '#E43767', borderRadius: '100%',display: 'flex', alignItems: 'center', justifyContent: 'center'}}
+                    onClick={onClick}
+                />
+            );
+        }
+
+        const settings = {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoPlay: true,
+            speed: 500,
+            autoplaySpeed: 1000,
+            cssEase: "linear",
+            dots: false,
+            nextArrow: <SampleNextArrow/>,
+            prevArrow: <SamplePrevArrow/>,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        initialSlide: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        };
+
+
         return (
             <section className="bottom-section-cust">
                 <div className="container">
@@ -32,66 +99,111 @@ class Bottom extends Component {
                     </div>
 
                     <div className="row">
-                        <div className="col-xl-4">
-                            <div className="card pb-4">
-                                <div className="card-header bg-white border-0 text-center p-4">
-                                    <img src="/assets/images/quote.png" alt=""/>
-                                </div>
-                                <div className="card-body">
-                                    <p>
-                                        For athletes, high altitude produces two contradictory effects on performance.
-                                        For explosive events
-                                    </p>
-                                </div>
-                                <div className="card-footer gap-3">
-                                    <img src="/assets/images/avatar1.png" alt=""/>
-                                    <div>
-                                        <h6>Marvin McKinney</h6>
-                                        <p className="p-0 m-0">Happy User</p>
+                        <Slider {...settings}>
+                            <div className="col-xl-4">
+                                <div className="card pb-4">
+                                    <div className="card-header bg-white border-0 text-center p-4">
+                                        <img className="text-center" src="/assets/images/quote.png" alt=""/>
+                                    </div>
+                                    <div className="card-body">
+                                        <p>
+                                            For athletes, high altitude produces two contradictory effects on
+                                            performance.
+                                            For explosive events
+                                        </p>
+                                    </div>
+                                    <div className="card-footer gap-3">
+                                        <img src="/assets/images/avatar1.png" alt=""/>
+                                        <div>
+                                            <h6>Marvin McKinney</h6>
+                                            <p className="p-0 m-0">Happy User</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-4">
-                            <div className="card pb-4">
-                                <div className="card-header bg-white border-0 text-center p-4">
-                                    <img src="/assets/images/quote.png" alt=""/>
-                                </div>
-                                <div className="card-body">
-                                    <p>
-                                        Great movie podcasts add to the conversation around a film and avoid mere
-                                        self-indulgence - here’s a breakdown of the best.
-                                    </p>
-                                </div>
-                                <div className="card-footer gap-3">
-                                    <img src="/assets/images/avatar1.png" alt=""/>
-                                    <div>
-                                        <h6>Marvin McKinney</h6>
-                                        <p className="p-0 m-0">Happy User</p>
+                            <div className="col-xl-4">
+                                <div className="card pb-4">
+                                    <div className="card-header bg-white border-0 text-center p-4">
+                                        <img src="/assets/images/quote.png" alt=""/>
+                                    </div>
+                                    <div className="card-body">
+                                        <p>
+                                            Great movie podcasts add to the conversation around a film and avoid mere
+                                            self-indulgence - here’s a breakdown of the best.
+                                        </p>
+                                    </div>
+                                    <div className="card-footer gap-3">
+                                        <img src="/assets/images/avatar1.png" alt=""/>
+                                        <div>
+                                            <h6>Marvin McKinney</h6>
+                                            <p className="p-0 m-0">Happy User</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-4">
-                            <div className="card pb-4">
-                                <div className="card-header bg-white border-0 text-center p-4">
-                                    <img src="/assets/images/quote.png" alt=""/>
-                                </div>
-                                <div className="card-body">
-                                    <p>
-                                        For athletes, high altitude produces two contradictory effects on performance.
-                                        For explosive events
-                                    </p>
-                                </div>
-                                <div className="card-footer gap-3">
-                                    <img src="/assets/images/avatar1.png" alt=""/>
-                                    <div>
-                                        <h6>Marvin McKinney</h6>
-                                        <p className="p-0 m-0">Happy User</p>
+                            <div className="col-xl-4">
+                                <div className="card pb-4">
+                                    <div className="card-header bg-white border-0 text-center p-4">
+                                        <img src="/assets/images/quote.png" alt=""/>
+                                    </div>
+                                    <div className="card-body">
+                                        <p>
+                                            For athletes, high altitude produces two contradictory effects on
+                                            performance.
+                                            For explosive events
+                                        </p>
+                                    </div>
+                                    <div className="card-footer gap-3">
+                                        <img src="/assets/images/avatar1.png" alt=""/>
+                                        <div>
+                                            <h6>Marvin McKinney</h6>
+                                            <p className="p-0 m-0">Happy User</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div className="col-xl-4">
+                                <div className="card pb-4">
+                                    <div className="card-header bg-white border-0 text-center p-4">
+                                        <img src="/assets/images/quote.png" alt=""/>
+                                    </div>
+                                    <div className="card-body">
+                                        <p>
+                                            Great movie podcasts add to the conversation around a film and avoid mere
+                                            self-indulgence - here’s a breakdown of the best.
+                                        </p>
+                                    </div>
+                                    <div className="card-footer gap-3">
+                                        <img src="/assets/images/avatar1.png" alt=""/>
+                                        <div>
+                                            <h6>Marvin McKinney</h6>
+                                            <p className="p-0 m-0">Happy User</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xl-4">
+                                <div className="card pb-4">
+                                    <div className="card-header bg-white border-0 text-center p-4">
+                                        <img src="/assets/images/quote.png" alt=""/>
+                                    </div>
+                                    <div className="card-body">
+                                        <p>
+                                            For athletes, high altitude produces two contradictory effects on
+                                            performance.
+                                            For explosive events
+                                        </p>
+                                    </div>
+                                    <div className="card-footer gap-3">
+                                        <img src="/assets/images/avatar1.png" alt=""/>
+                                        <div>
+                                            <h6>Marvin McKinney</h6>
+                                            <p className="p-0 m-0">Happy User</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Slider>
                     </div>
                 </div>
             </section>

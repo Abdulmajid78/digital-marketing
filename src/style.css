@@ -449,10 +449,25 @@
     line-height: 0.5rem; /* 100% */
 }
 
-/*end bottom section*/
+.slick-slide > div {
+    margin: 0 10px;
+}
 
+.slick-list {
+    margin: 0 -10px;
+}
 
-/* start form section*/
+.slick-prev:before, .slick-next:before {
+    color: rgb(var(--main-color));
+    content:''
+}
+
+.slick-slide img {
+    display: inline;
+}
+
+    /*end bottom section*/
+    /* start form section*/
 .form-section-cust {
     background: linear-gradient(180deg, rgb(var(--main-color)) 50%, #1e1e1e 0);
 }
@@ -558,5 +573,8 @@
 .footer-section-custom ul li a {
     color: white;
 }
+
+.footer-section-custom ul li a:hover {
+color: var(--main-color-dark)}
 
 /*end footer section*/

@@ -93,7 +93,7 @@ class Footer extends Component {
                             </div>
                         </div>
 
-                        <div className="d-flex justify-content-center py-4 mt-4 border-top">
+                        <div className="d-flex justify-content-center py-4 mt-4 text-white border-top">
                             <p>© 2023 Company, Inc. All rights reserved.</p>
                         </div>
                     </footer>

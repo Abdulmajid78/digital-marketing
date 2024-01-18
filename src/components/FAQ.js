@@ -5,7 +5,7 @@ class Faq extends Component {
     render() {
         const {array} = this.props
         return (
-            <section className="faq-section-cust">
+            <section className="faq-section-cust" id="faq">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
