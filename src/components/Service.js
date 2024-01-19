@@ -59,14 +59,14 @@ class Service extends Component {
                             <div className="col-xl-6"
                                  data-aos="zoom-in-left" data-aos-duration="1200"
                                  data-aos-offset="10" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                                 data-aos-easing="linear">
                                 <img src="/assets/images/phone1.png" alt=""/>
                             </div>
 
                             <div className="col-xl-6"
                                  data-aos="zoom-in-right" data-aos-duration="1200"
                                  data-aos-offset="10" data-aos-delay="200"
-                                 data-aos-easing="ease-in-out">
+                                 data-aos-easing="linear">
                                 <h2>3 преимущество <br/> работы с нами</h2>
 
                                 <div className="background gap-3 mb-3">

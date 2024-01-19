@@ -6,8 +6,12 @@ class Priority extends Component {
             <section className="priority-section-cust" id="about">
                 <div className="container">
                     <div className="row">
-                        <h1>Ваш проект всегда в приоритете?</h1>
-                        <div className="col-xl-4">
+                        <h1 data-aos="flip-left"
+                            data-aos-offset="200"
+                            data-aos-delay="50"
+                            data-aos-duration="1000"
+                        >Ваш проект всегда в приоритете?</h1>
+                        <div data-aos="zoom-in-right" data-aos-duration="1200"  className="col-xl-4">
                             <div className="card h-100">
                                 <div className="card-header border-0 p-4 text-center">
                                     <img src="/assets/images/icon1.png" alt=""/>
@@ -22,7 +26,7 @@ class Priority extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4">
+                        <div data-aos="zoom-in-up" data-aos-duration="1300" className="col-xl-4">
                             <div className="card h-100">
                                 <div className="card-header border-0 p-4 text-center">
                                     <img src="/assets/images/icon2.png" alt=""/>
@@ -37,7 +41,7 @@ class Priority extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4">
+                        <div data-aos="zoom-in-left" data-aos-duration="1200"  className="col-xl-4">
                             <div className="card h-100">
                                 <div className="card-header border-0 p-4 text-center">
                                     <img src="/assets/images/icon3.png" alt=""/>

@@ -30,14 +30,15 @@ class Bottom extends Component {
         }
 
         const settings = {
+            dots: false,
             infinite: true,
+            speed: 900,
             slidesToShow: 3,
             slidesToScroll: 1,
-            autoPlay: true,
-            speed: 500,
-            autoplaySpeed: 1000,
+            swipeToSlide: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
             cssEase: "linear",
-            dots: false,
             nextArrow: <SampleNextArrow/>,
             prevArrow: <SamplePrevArrow/>,
             responsive: [

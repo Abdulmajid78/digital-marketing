@@ -22,7 +22,11 @@ class Header extends Component {
                                data-aos-mirror="true"
                                data-aos-once="false">Надежные решения для вашего успеха.</p>
 
-                            <button>Бесплатная Консультация</button>
+                            <button data-aos="zoom-out" data-aos-duration='1900'
+                                    data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                    data-aos-once="false" data-aos-delay="950"
+                            >Бесплатная Консультация
+                            </button>
                         </div>
                         <div className="col-xl-1 col-0"></div>
                         <div className="col-xl-5 col-12">
